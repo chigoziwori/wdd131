@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .header-content {
+        flex-wrap: nowrap;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 12px 18px;
+    }
+
+    main {
+        padding: 35px 25px;
+    }
+
+    main h2 {
+        font-size: 2.2rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    figure img {
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        max-width: 1200px;
+    }
+}
