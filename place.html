@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Chigozi Goodluck Emmanwori">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Nigeria | WDD 131</title>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/nigeria-small.webp">
+                <img src="images/nigeria-large.webp" alt="Nigeria" width="1600" height="900">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data about Nigeria</h2>
+            <div class="information">
+                <p><strong>Area:</strong></p>
+                <p>923,768 km²</p>
+                <p><strong>Population:</strong></p>
+                <p>Approximately 206 million</p>
+                <p><strong>Capital:</strong></p>
+                <p>Abuja</p>
+                <p><strong>Languages:</strong></p>
+                <p>English, Hausa, Yoruba, Igbo and other indigenous languages</p>
+                <p><strong>Currency:</strong></p>
+                <p>Nigerian Naira (₦)</p>
+                <p><strong>Time Zone:</strong></p>
+                <p>West Africa Time (WAT) UTC+1</p>
+                <p><strong>Continent</strong></p>
+                <p>Africa</p>
+                <p><strong>Government:</strong></p>
+                <p>Federal Republic</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather in Nigeria</h2>
+            <img class="weather-icon" src="images/weather.svg" alt="Weather Icon" width="60" height="60">
+            <div class="information">
+                <p><strong>Temperature:</strong></p>
+                <p><span id=temperature>29</span>°C</p>
+                <p><strong>Conditions:</strong></p>
+                <p>Partly Cloudy</p>
+                <p><strong>Wind:</strong></p>
+                <p><span id="wind-speed">12</span>km/h</p>
+                <p><strong>Wind Chill:</strong></p>
+                <p id="wind-chill">N/A</p>
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Chigozi Goodluck Emmanwori
+            | Nigeria
+        </p>
+        <p>Last Modification:<span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
