@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore temples of The Church of Jesus Christ of Latter-day Saints around the world.">
+    <meta name="author" content="Chigozi Goodluck Emmanwori">
+    <title>Temple Album | Album Enhancement</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temple-small.css">
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temple Album</h1>
+
+            <button id="menu-button" type="button"
+                aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navigation">☰</button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="#home" data-filter="home" class="active" aria-current="page">Home</a>
+                <a href="#old" data-filter="old">Old</a>
+                <a href="#new" data-filter="new">New</a>
+                <a href="#large" data-filter="large">Large</a>
+                <a href="#small" data-filter="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Temples</h2>
+        <div class="temple-grid" id="temple-grid" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Chigozi Goodluck Emmanwori | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
